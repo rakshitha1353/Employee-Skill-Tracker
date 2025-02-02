@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill track</title>
-</head>
+    <title>Employee Skill Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">  </head>
 <body>
-    
-</body>
+
+    <div class="container">
+        <h1>Employee Skill Tracker</h1>
+
+        <form id="employee-info-form">
+            <h2>Employee Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            <button type="button" id="save-info">Save Information</button>
+        </form>
+
+        <form id="activity-form">
+            <h2>Log Daily Activity</h2>
+            <label for="activity">Activity:</label>
+            <textarea id="activity" name="activity" rows="4" required></textarea>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="skills">Skills Used (comma-separated):</label>
+            <input type="text" id="skills" name="skills" required>
+            <button type="submit">Log Activity</button>
+        </form>
+
+        <h2>Activity Log for <span id="employee-name-display"></span></h2>
+        <table id="activity-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Activity</th>
+                    <th>Skills Used</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="ai-suggestions">
+            <h2>AI Skill-Up Suggestions <i class="fas fa-lightbulb icon"></i></h2>
+            <ul id="suggestion-list"></ul>
+        </div>
+
+        <div id="weekly-report">
+            <h2>Weekly Report (Simulated) <i class="fas fa-chart-line icon"></i></h2>
+            <p>This section would display a summary of the week's activities and skills used. This is a placeholder.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> </body>
 </html>
