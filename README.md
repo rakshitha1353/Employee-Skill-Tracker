@@ -29,7 +29,7 @@ This project is an Employee Skill Tracker, a web application designed to help em
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/rakshitha1353/Employee-Skill-Tracker
-    cd [directory containing HTML, CSS, JS files]
+   
     ```
 2.  **Open `index.html` in your web browser.**
 
